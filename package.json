@@ -4,7 +4,8 @@
   "description": "News Site ES6",
   "main": "index.js",
   "scripts": {
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "deploy": "webpack --config webpack.production.config.js"
   },
   "author": "Leonardo Frangelli",
   "license": "ISC",
