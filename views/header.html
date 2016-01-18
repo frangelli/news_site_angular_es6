@@ -1,0 +1,21 @@
+<header ng-controller="NavigationController as navigation">
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-main" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand" ui-sref="home"><img src="images/logo.png" alt="Logo" /></a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="nav-main">
+			  <ul class="nav navbar-nav navbar-right">
+				<li ng-repeat="category in navigation.categories"><a ui-sref="articles-by-category({category_name:category.name})">{{::category.name}}</a></li>
+			  </ul>
+			</div>
+	  </div>
+	</nav>
+</header>

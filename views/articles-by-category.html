@@ -1,0 +1,16 @@
+<!-- topbar -->
+<ng-include src="'views/header.html'"></ng-include>
+<!-- content -->
+<div class="container">
+	<article class="col-md-12 col-sm-12 col-xs-12" ng-repeat="article in bycategory.articles">
+		<span class="article-category">{{::article.category}}</span>
+		<h3 class="article-title"><a ui-sref="article-details({article_id:article.objectId})">{{::article.title}}</a></h3>
+		<div class="author">
+			<img class="img-circle" src="images/author.jpg">
+			<small>by Creed Brotton</small>
+		</div>
+		<p class="article-excerpt">
+			{{::article.excerpt}}
+		</p>
+	</article>
+</div>

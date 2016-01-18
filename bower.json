@@ -1,0 +1,28 @@
+{
+  "name": "news_site_es6",
+  "version": "0.0.0",
+  "authors": [
+    "Leonardo Frangelli <leonardo.frangelli@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [
+    "es6"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "angular": "~1.4.8",
+    "angular-ui-router": "~0.2.15",
+    "angular-loading-bar": "~0.8.0",
+    "angular-animate": "~1.4.8"
+  }
+}

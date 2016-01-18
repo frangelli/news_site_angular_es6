@@ -1,0 +1,43 @@
+<!-- topbar -->
+<ng-include src="'views/header.html'"></ng-include>
+<!-- content -->
+<div class="container">
+	<section class="row featureds">
+		<article class="featured-primary col-md-6 col-sm-12 col-xs-12" ng-repeat="feat1 in home.featuredPrimary">
+			<span class="article-category">{{::feat1.category}}</span>
+			<a ui-sref="article-details({article_id:feat1.objectId})"><img class="img-responsive" ng-src="{{::feat1.image.url}}"></a>
+			<h3 class="article-title"><a ui-sref="article-details({article_id:feat1.objectId})">{{::feat1.title}}</a></h3>
+			<div class="author">
+				<img class="img-circle" src="images/author.jpg">
+				<small>by Creed Brotton</small>
+			</div>
+		</article>
+
+		<article class="featured-secondary col-md-3 col-sm-6 col-xs-12" ng-repeat="feat2 in home.featuredSecondary">
+			<span class="article-category">{{::feat2.category}}</span>
+			<a ui-sref="article-details({article_id:feat2.objectId})"><img class="img-responsive" ng-src="{{::feat2.image.url}}"></a>
+			<h5 class="article-title"><a ui-sref="article-details({article_id:feat2.objectId})">{{::feat2.title}}</a></h5>
+			<div class="author">
+				<img class="img-circle" src="images/author.jpg">
+				<small>by Creed Brotton</small>
+			</div>
+			<p class="article-excerpt">
+				{{::feat2.excerpt}}
+			</p>
+		</article>
+	</section>
+	<hr class="hidden-xs hidden-sm">
+	<section class="row last-news">
+		<article class="col-md-4 col-sm-6 col-xs-12" ng-repeat="article in home.lastNews">
+			<span class="article-category">{{::article.category}}</span>
+			<h5 class="article-title"><a ui-sref="article-details({article_id:article.objectId})">{{::article.title}}</a></h5>
+			<div class="author">
+				<img class="img-circle" src="images/author.jpg">
+				<small>by Creed Brotton</small>
+			</div>
+			<p class="article-excerpt">
+				{{::article.excerpt}}
+			</p>
+		</article>
+	</section>
+</div>

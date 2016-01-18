@@ -1,0 +1,17 @@
+<!-- topbar -->
+<ng-include src="'views/header.html'"></ng-include>
+<!-- content -->
+<div class="container">
+	<article class="featured-secondary col-md-12 col-sm-12 col-xs-12">
+		<span class="article-category">{{::details.article.category}}</span>
+		<img class="img-responsive" ng-src="{{::details.article.image.url}}">
+		<h5 class="article-title">{{::details.article.title}}</h5>
+		<div class="author">
+			<img class="img-circle" src="images/author.jpg">
+			<small>by Creed Brotton</small>
+		</div>
+		<p class="article-excerpt">
+			{{::details.article.content}}
+		</p>
+	</article>
+</div>

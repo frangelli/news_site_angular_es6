@@ -1,0 +1,74 @@
+body { padding-top: 100px; }
+
+/** HEAEDER **/
+.navbar {
+	background-color: #ffffff;
+	border-bottom: 1px solid #464646;
+}
+
+.navbar .navbar-brand {
+	padding: 2px 15px;
+}
+
+#nav-main a {
+	color: #464646;
+	text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+	.navbar-brand {
+		display: block;
+		width: 50px;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.navbar-toggle {
+		float: left;
+		margin-left: 15px;
+	}
+}
+
+/** ARTICLES **/
+.featureds {
+
+}
+
+article {
+	padding-bottom: 20px;
+}
+
+article a {
+	color: #000000;
+}
+
+@media (max-width: 768px) {
+	article {
+		padding-bottom: 40px;
+	}
+}
+
+.article-category {
+	text-transform: uppercase;
+	font-size: .9em;
+}
+
+.article-title {
+	margin-bottom: 15px;
+}
+
+.article-excerpt {
+	margin-top: 15px;
+	color: #888;
+	font-size: .8em;
+}
+
+.author {
+	font-style: italic;
+	color: #999;
+}
+
+.last-news {
+	padding-top: 30px;
+}
