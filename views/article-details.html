@@ -3,12 +3,14 @@
 <!-- content -->
 <div class="container">
 	<article class="featured-secondary col-md-12 col-sm-12 col-xs-12">
-		<span class="article-category">{{::details.article.category}}</span>
+		<span class="article-category" style="color:{{::details.article.color}}">{{::details.article.category}}</span>
 		<img class="img-responsive" ng-src="{{::details.article.image.url}}">
-		<h5 class="article-title">{{::details.article.title}}</h5>
-		<div class="author">
-			<img class="img-circle" src="images/author.jpg">
-			<small>by Creed Brotton</small>
+		<h2 class="article-title article-title-2">{{::details.article.title}}</h2>
+		<div class="author clearfix">
+			<img class="img-circle" ng-src="images/author.jpg" width="45" height="45">
+			<div class="author-name">
+				<span>by Creed Brotton</span>
+			</div>
 		</div>
 		<p class="article-excerpt">
 			{{::details.article.content}}
