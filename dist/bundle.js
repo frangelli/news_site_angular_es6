@@ -75,7 +75,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	angular.module('app', ['ngAnimate', 'angular-loading-bar', 'ui.router']);
+	angular.module('app', ['ngAnimate', 'angular-loading-bar', 'ui.router', 'ngRetina']);
 
 	//making angular aware of the controllers and services ( es6 )
 	angular.module('app').controller('NavigationController', _navigation2.default);

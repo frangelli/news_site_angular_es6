@@ -7,7 +7,8 @@ import NewsService from './services/news.service';
 angular.module('app', [
 	'ngAnimate',
 	'angular-loading-bar',
-	'ui.router'
+	'ui.router',
+	'ngRetina'
 ]);
 
 //making angular aware of the controllers and services ( es6 )
