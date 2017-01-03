@@ -1,0 +1,18 @@
+<!-- topbar -->
+<ng-include src="'views/header.html'"></ng-include>
+<!-- content -->
+<div class="container">
+	<article class="col-md-12 col-sm-12 col-xs-12" ng-repeat="article in bycategory.articles">
+		<span class="article-category" style="color:{{::article.color}}">{{::article.category}}</span>
+		<h2 class="article-title article-title-2"><a ui-sref="article-details({article_id:article.objectId})">{{::article.title}}</a></h2>
+		<div class="author clearfix">
+			<img class="img-circle" ng-src="images/author.jpg" width="45" height="45">
+			<div class="author-name">
+				<span>by Leonardo da Silva Frangelli Hanefren</span>
+			</div>
+		</div>
+		<p class="article-excerpt">
+			{{::article.excerpt}}
+		</p>
+	</article>
+</div>

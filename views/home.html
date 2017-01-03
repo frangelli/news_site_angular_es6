@@ -1,0 +1,72 @@
+<!-- topbar -->
+<ng-include src="'views/header.html'"></ng-include>
+<!-- content -->
+<div class="container">
+	<section class="row featureds">
+		<article class="featured-primary col-md-6 col-sm-12 col-xs-12" ng-repeat="feat1 in home.featuredPrimary">
+			<span class="article-category" style="color:{{::feat1.color}}">{{::feat1.category}}</span>
+			<a  ui-sref="article-details({article_id:feat1.objectId})">
+				<div class="article-image">
+					<img class="img-responsive" ng-src="{{::feat1.image.url}}" data-at2x="{{::feat1.image_2x.url}}">
+					<div class="overlay">
+						<span class="plus">Read More</span>
+					</div>
+				</div>
+			</a>
+			<h1 class="article-title article-title-1"><a ui-sref="article-details({article_id:feat1.objectId})">{{::feat1.title}}</a></h1>
+			<div class="author clearfix">
+				<img class="img-circle" ng-src="images/author.jpg" width="45" height="45">
+				<div class="author-name">
+					<span>by Leonardo da Silva Frangelli Hanefren</span>
+				</div>
+			</div>
+			<div class="article-excerpt hidden-sm hidden-md hidden-lg">
+				<p>
+					{{::feat1.excerpt}}
+				</p>
+			</div>
+		</article>
+
+		<article class="featured-secondary col-md-3 col-sm-6 col-xs-12" ng-repeat="feat2 in home.featuredSecondary">
+			<span class="article-category" style="color:{{::feat2.color}}">{{::feat2.category}}</span>
+			<a ui-sref="article-details({article_id:feat2.objectId})">
+				<div class="article-image">
+					<img class="img-responsive" ng-src="{{::feat2.image.url}}" data-at2x="{{::feat2.image_2x.url}}">
+					<div class="overlay">
+						<span class="plus">Read More</span>
+					</div>
+				</div>
+			</a>
+			<h2 class="article-title article-title-2"><a ui-sref="article-details({article_id:feat2.objectId})">{{::feat2.title}}</a></h2>
+			<div class="author clearfix">
+				<img class="img-circle" ng-src="images/author.jpg" width="45" height="45">
+				<div class="author-name">
+					<span>by Creed Brotton</span>
+				</div>
+			</div>
+			<div class="article-excerpt">
+				<p>
+					{{::feat2.excerpt}}
+				</p>
+			</div>
+		</article>
+	</section>
+	<hr class="hidden-xs hidden-sm">
+	<section class="row last-news">
+		<article class="col-md-4 col-sm-6 col-xs-12" ng-repeat="article in home.lastNews">
+			<span class="article-category" style="color:{{::article.color}}">{{::article.category}}</span>
+			<h2 class="article-title article-title-3"><a ui-sref="article-details({article_id:article.objectId})">{{::article.title}}</a></h2>
+			<div class="author clearfix">
+				<img class="img-circle" ng-src="images/author.jpg" width="45" height="45">
+				<div class="author-name">
+					<span>by Creed Brotton</span>
+				</div>
+			</div>
+			<div class="article-excerpt">
+				<p>
+					{{::article.excerpt}}
+				</p>
+			</div>
+		</article>
+	</section>
+</div>
